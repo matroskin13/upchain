@@ -24,7 +24,7 @@ createCluster({
 ## Create service
 
 ```js
-const { createService, HttpAdapter, createError, LEVEL_NOTICE } = require('../');
+const { createService, HttpAdapter } = require('upchain');
 
 let userService = createService({ port: 3011 }, HttpAdapter);
 
