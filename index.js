@@ -9,7 +9,7 @@ const constants = require('./lib/constants');
  * @param {Member[]} members
  * @param {Adapter} adapter
  */
-const createCluster = ({ port, members = [], adapter }) => new Cluster(port, members, adapter);
+const createCluster = ({ port, members = [], adapter, isCors }) => new Cluster(port, members, adapter, isCors);
 
 /**
  * @param {Object} options
