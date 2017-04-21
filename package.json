@@ -1,6 +1,6 @@
 {
   "name": "upchain",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Valentin Dubrovsky <spbclan@gmail.com>",
   "dependencies": {
     "body-parser": "~1.17.1",
