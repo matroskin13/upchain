@@ -28,8 +28,8 @@ const { createService, HttpAdapter } = require('upchain');
 
 let userService = createService({ port: 3011 }, HttpAdapter);
 
-userService.input('usersIds', (property, input, payload) => {
-    payload.users = property.map(id => ({ id, name: 'user' + id }));
+userService.input('usersIds', (input, payload) => {
+    payload.users = input.usersIds.map(id => ({ id, name: 'user' + id }));
 });
 
 userService.start();
