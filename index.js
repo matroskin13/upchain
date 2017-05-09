@@ -33,7 +33,8 @@ const createCluster = (options) => {
 
 /**
  * @param {Object} options
- * @param {Object[]} options.plugins
+ * @param {Number} options.port
+ * @param {Object[]} [options.plugins]
  * @param {Adapter} adapter
  */
 const createService = (options, adapter) => {
